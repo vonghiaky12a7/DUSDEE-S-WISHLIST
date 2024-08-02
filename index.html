@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WISHLIST CỦA DUSSDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script
+      src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js"
+      defer
+      init
+    ></script>
+    <script type="text/javascript">
+      window.tailwind.config = {
+        darkMode: ["class"],
+        theme: {
+          extend: {
+            colors: {
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))",
+              background: "hsl(var(--background))",
+              foreground: "hsl(var(--foreground))",
+              primary: {
+                DEFAULT: "hsl(var(--primary))",
+                foreground: "hsl(var(--primary-foreground))",
+              },
+              secondary: {
+                DEFAULT: "hsl(var(--secondary))",
+                foreground: "hsl(var(--secondary-foreground))",
+              },
+              destructive: {
+                DEFAULT: "hsl(var(--destructive))",
+                foreground: "hsl(var(--destructive-foreground))",
+              },
+              muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+              },
+              accent: {
+                DEFAULT: "hsl(var(--accent))",
+                foreground: "hsl(var(--accent-foreground))",
+              },
+              popover: {
+                DEFAULT: "hsl(var(--popover))",
+                foreground: "hsl(var(--popover-foreground))",
+              },
+              card: {
+                DEFAULT: "hsl(var(--card))",
+                foreground: "hsl(var(--card-foreground))",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --foreground: 240 10% 3.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 240 10% 3.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 240 10% 3.9%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+          --secondary-foreground: 240 5.9% 10%;
+          --muted: 240 4.8% 95.9%;
+          --muted-foreground: 240 3.8% 46.1%;
+          --accent: 240 4.8% 95.9%;
+          --accent-foreground: 240 5.9% 10%;
+          --destructive: 0 84.2% 60.2%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 5.9% 90%;
+          --input: 240 5.9% 90%;
+          --ring: 240 5.9% 10%;
+          --radius: 0.5rem;
+        }
+        .dark {
+          --background: 240 10% 3.9%;
+          --foreground: 0 0% 98%;
+          --card: 240 10% 3.9%;
+          --card-foreground: 0 0% 98%;
+          --popover: 240 10% 3.9%;
+          --popover-foreground: 0 0% 98%;
+          --primary: 0 0% 98%;
+          --primary-foreground: 240 5.9% 10%;
+          --secondary: 240 3.7% 15.9%;
+          --secondary-foreground: 0 0% 98%;
+          --muted: 240 3.7% 15.9%;
+          --muted-foreground: 240 5% 64.9%;
+          --accent: 240 3.7% 15.9%;
+          --accent-foreground: 0 0% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 3.7% 15.9%;
+          --input: 240 3.7% 15.9%;
+          --ring: 240 4.9% 83.9%;
+        }
+      }
+      .cherry-bomb-one-regular {
+        font-family: "Cherry Bomb One", system-ui;
+        font-weight: 700;
+        font-style: normal;
+background: rgb(21,143,223);
+background: linear-gradient(90deg, rgba(21,143,223,1) 0%, rgba(62,143,171,1) 58%, rgba(67,141,177,1) 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-background text-foreground">
+      <header class="flex justify-between items-center p-6 md:mx-10">
+        <div class="text-3xl md:text-4xl font-bold cherry-bomb-one-regular">DUSDEE</div>
+        <nav class="flex flex-wrap relative">
+          <a href="#" data-id="1">Skirt</a>
+          <a href="#" data-id="2">Shirt</a>
+          <a href="#" data-id="3">Jeans</a>
+          <a href="#" data-id="4">Socks</a>
+          <a href="#" data-id="5">Shoes</a>
+          <a href="#" data-id="6">Makeup</a>
+          <a href="#" data-id="7">Contour</a>
+          <a href="#" data-id="8">Accessories</a>
+          <a href="#" data-id="9">Makeup</a>
+          <a href="#" data-id="10">Curler</a>
+          <div class="animation start-home"></div>
+        </nav>
+        <div class="flex space-x-2">
+          <!-- <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Add</button> -->
+          <a href="https://www.instagram.com/_dusdee/" aria-label="Instagram">
+            <img
+              aria-hidden="true"
+              alt="instagram-icon"
+              src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"
+              width="100px"
+              height="100px"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/vinguyen.ilen"
+            aria-label="Facebook"
+          >
+            <img
+              aria-hidden="true"
+              alt="facebook-icon"
+              src="https://download.logo.wine/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.png"
+              width="100px"
+              height="100px"
+            />
+          </a>
+        </div>
+      </header>
+
+      <div class="container ms-24 me-24 hidden" id="1">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-li6te4ejej8252"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description">Quần da rút dây</span>
+              <h2 class="card__title">HONG HAN FASHION</h2>
+              <a
+                href="https://shopee.vn/product/636689473/20689975880?d_id=f3c01&uls_trackid=50dgqojg02n6&utm_content=3rkpSrXT77gqVctCgYTqggJTPuyH"
+                class="card__button"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/bf36850af9eba8b040f55a8122c3335b"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Chân váy da rút hông hai bên dáng ngắn</span
+              >
+              <h2 class="card__title">OKÉLLA CLOSET</h2>
+              <a
+                href="https://shopee.vn/product/494371393/10665514250?d_id=f3c01&uls_trackid=50dhlumn01n6&utm_content=3rkpSrXT77t5ftC9jhZaKi1iP7uZ"
+                class="card__button"
+                target="_blank"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnl0kyd7qwoda4"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Chân váy Goness kiểu rút dây 2 bên dáng ngắn</span
+              >
+              <h2 class="card__title">GONESS FASHION</h2>
+              <a
+                href="https://shopee.vn/Ch%C3%A2n-v%C3%A1y-Goness-ki%E1%BB%83u-r%C3%BAt-d%C3%A2y-2-b%C3%AAn-d%C3%A1ng-ng%E1%BA%AFn-ch%E1%BA%A5t-li%E1%BB%87u-da-n%E1%BB%AF-body-nh%C3%BAn-h%C3%B4ng-ulzzang-i.170014092.12733871977?sp_atk=f5ea5da8-3c52-4f23-a486-52d120e03693&xptdk=f5ea5da8-3c52-4f23-a486-52d120e03693"
+                target="_blank"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="2">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd4s-lvvc0z0mther53"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Lovito Áo ba lỗ có dây buộc phía trước trơn</span
+              >
+              <h2 class="card__title">LOVITO OFFICIAL STORE</h2>
+              <a
+                href="https://shopee.vn/Lovito-%C3%81o-ba-l%E1%BB%97-c%C3%B3-d%C3%A2y-bu%E1%BB%99c-ph%C3%ADa-tr%C6%B0%E1%BB%9Bc-tr%C6%A1n-thanh-l%E1%BB%8Bch-d%C3%A0nh-cho-n%E1%BB%AF-LNE63156-i.446089250.28054582049?xptdk=4b126023-a641-4595-a39a-75502e20d97d"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-licwl30ne7dec8"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Áo ống, áo quây cúp ngực croptop</span
+              >
+              <h2 class="card__title">T-N TUẤN NGA COLLECTION</h2>
+              <a
+                href="https://shopee.vn/%C3%81o-%E1%BB%91ng-%C3%A1o-qu%C3%A2y-c%C3%BAp-ng%E1%BB%B1c-croptop-C%C3%93-M%C3%9AT-NG%E1%BB%B0C-TU%E1%BA%A4N-NGA-COLLECTION-v%E1%BA%A3i-borip-100-cotton-%C3%B4m-body-sexy-i.465790670.22746276960?xptdk=9a25f446-e919-4330-88d4-64247ea9d4ec"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="3">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lp4u3res1efi44"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Quần bò jeans nữ ống loe lưng cao</span
+              >
+              <h2 class="card__title">Gina Official</h2>
+              <a
+                href="https://shopee.vn/Qu%E1%BA%A7n-b%C3%B2-jeans-n%E1%BB%AF-%E1%BB%91ng-loe-l%C6%B0ng-cao-Avocado-ch%E1%BA%A5t-jean-d%C3%A0y-d%E1%BA%B7n-co-gi%C3%A3n-qu%E1%BA%A7n-b%C3%B2-jean-%E1%BB%91ng-loe-n%E1%BB%AF-c%E1%BA%A1p-cao-%C3%B4m-eo-g%E1%BB%8Dn-ch%C3%A2n-i.645105314.22561452199?sp_atk=a4f540c4-126d-4cd1-a098-09b710ccf555&xptdk=a4f540c4-126d-4cd1-a098-09b710ccf555"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rdwf-lxgjxcbnn68w33"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Quần jean ống cạp cao rộng Lovito viền thô có túi</span
+              >
+              <h2 class="card__title">LOVITO OFFICIAL STORE</h2>
+              <a
+                href="https://shopee.vn/Qu%E1%BA%A7n-jean-%E1%BB%91ng-c%E1%BA%A1p-cao-r%E1%BB%99ng-Lovito-vi%E1%BB%81n-th%C3%B4-c%C3%B3-t%C3%BAi-ph%E1%BB%91i-n%C3%BAt-th%E1%BB%9Di-trang-th%C6%B0%E1%BB%9Dng-ng%C3%A0y-cho-n%E1%BB%AF-LNE13105-(Nhi%E1%BB%81u-m%C3%A0u)-i.446089250.22648598823?sp_atk=c37cf845-183b-4dbc-a4ec-ca517a6f6d5d&xptdk=c37cf845-183b-4dbc-a4ec-ca517a6f6d5d"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="4">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134201-23030-vnwhhy8djbov12"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Tất vớ lưới phong cách lolita buộc dây đan chéo</span
+              >
+              <h2 class="card__title">by.Lisa Shop</h2>
+              <a
+                href="https://shopee.vn/T%E1%BA%A5t-v%E1%BB%9B-l%C6%B0%E1%BB%9Bi-phong-c%C3%A1ch-lolita-bu%E1%BB%99c-d%C3%A2y-%C4%91an-ch%C3%A9o-%E2%9D%A4%EF%B8%8FT%E1%BA%A5t-n%E1%BB%AF-c%E1%BB%99t-d%C3%A2y-t%E1%BA%A5t-n%E1%BB%AF-c%E1%BB%95-cao-v%E1%BB%9B-c%E1%BB%95-cao-T%E1%BA%A5t-n%E1%BB%AF-phong-c%C3%A1ch-gothic-TG25-i.16976697.12175455261?sp_atk=e4c7e5be-3fc4-4684-abc7-556c863e8e3f&xptdk=e4c7e5be-3fc4-4684-abc7-556c863e8e3f"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134201-23020-zecz4y4d7wnv8b"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Quần tất lưới đính nơ xinh xắn da 3d gợi cảm màu đen chếch
+                chi</span
+              >
+              <h2 class="card__title">by.Lisa Shop</h2>
+              <a
+                href="https://shopee.vn/Qu%E1%BA%A7n-t%E1%BA%A5t-l%C6%B0%E1%BB%9Bi-%C4%91%C3%ADnh-n%C6%A1-xinh-x%E1%BA%AFn-da-3d-g%E1%BB%A3i-c%E1%BA%A3m-m%C3%A0u-%C4%91en-sexy-quy%E1%BA%BFn-r%C5%A9-phong-c%C3%A1ch-lolita-QT28-i.16976697.20474356119?publish_id=&sp_atk=b9701d60-7aeb-4ef8-8059-9dbde7b4479d&xptdk=b9701d60-7aeb-4ef8-8059-9dbde7b4479d"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="5">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo8kbc9lhm6jcf"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Giày búp bê lolita quai đính nơ tiểu thư có dây chun nhỏ</span
+              >
+              <h2 class="card__title">DNA Studio</h2>
+              <a
+                href="https://shopee.vn/-C%C3%93-S%E1%BA%B4N-Gi%C3%A0y-b%C3%BAp-b%C3%AA-lolita-quai-%C4%91%C3%ADnh-n%C6%A1-ti%E1%BB%83u-th%C6%B0-c%C3%B3-d%C3%A2y-chun-nh%E1%BB%8F-ti%E1%BB%87n-l%E1%BB%A3i-phong-c%C3%A1ch-d%E1%BB%85-th%C6%B0%C6%A1ng-cao-5-cm-i.521071327.25301329924?sp_atk=82bf288d-43ea-4719-81b5-97911c45c676&xptdk=82bf288d-43ea-4719-81b5-97911c45c676"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lns37fpmdawqc9"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Giày quai chéo cách điệu da bóng hai màu đen trắng</span
+              >
+              <h2 class="card__title">Giày Nữ Ulzzang</h2>
+              <a
+                href="https://shopee.vn/Gi%C3%A0y-quai-ch%C3%A9o-c%C3%A1ch-%C4%91i%E1%BB%87u-da-b%C3%B3ng-hai-m%C3%A0u-%C4%91en-tr%E1%BA%AFng-i.194336219.24000321569?publish_id=&sp_atk=22ac20c7-6c3a-463e-b3c5-df4e2dc8cf51&xptdk=22ac20c7-6c3a-463e-b3c5-df4e2dc8cf51"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/7910c89a66088f375e000366b927be32"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Giày bốt nữ siêu cao cổ khoá kéo</span
+              >
+              <h2 class="card__title">Review Giày Đẹp</h2>
+              <a
+                href="https://shopee.vn/Gi%C3%A0y-b%E1%BB%91t-n%E1%BB%AF-si%C3%AAu-cao-c%E1%BB%95-kho%C3%A1-k%C3%A9o-Cao-C%E1%BA%A5p-m%C3%A3-1900-boots-n%E1%BB%AF-chi%E1%BA%BFn-binh-%C4%91%E1%BB%99n-%C4%91%E1%BA%BF-2-m%C3%A0u-si%C3%AAu-hot-i.128545895.13101682281?sp_atk=3fcdcc05-b81b-4cad-9da3-78c1591a8fdd&xptdk=3fcdcc05-b81b-4cad-9da3-78c1591a8fdd"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="6">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Vancouver Mountains, Canada</span>
+              <h2 class="card__title">The Great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Poon Hill, Nepal</span>
+              <h2 class="card__title">Starry Night</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Bojcin Forest, Serbia</span>
+              <h2 class="card__title">Path Of Peace</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="7">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Vancouver Mountains, Canada</span>
+              <h2 class="card__title">The Great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Poon Hill, Nepal</span>
+              <h2 class="card__title">Starry Night</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Bojcin Forest, Serbia</span>
+              <h2 class="card__title">Path Of Peace</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="8">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Vancouver Mountains, Canada</span>
+              <h2 class="card__title">The Great Path</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Poon Hill, Nepal</span>
+              <h2 class="card__title">Starry Night</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="" alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">Bojcin Forest, Serbia</span>
+              <h2 class="card__title">Path Of Peace</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="9">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-tatlnnve9xjv01"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Mút Trang Điểm Mini Finger Puff TMR</span
+              >
+              <h2 class="card__title">TMR Official Store</h2>
+              <a
+                href="https://shopee.vn/-5-set-M%C3%BAt-Trang-%C4%90i%E1%BB%83m-Mini-Finger-Puff-TMR-M%C3%BAt-T%C3%A1n-Kem-N%E1%BB%81n-Kem-Che-Khuy%E1%BA%BFt-Cushion-i.406577721.21562674747?sp_atk=324fe622-69a0-47ab-89a6-faaebb80cbc1&xptdk=324fe622-69a0-47ab-89a6-faaebb80cbc1"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container ms-24 me-24 hidden" id="10">
+        <div class="card__container">
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lu8zf0wfd3q73c"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Máy Uốn Tóc Xoăn Sóng Nước Hippie</span
+              >
+              <h2 class="card__title">hoanglong_official</h2>
+              <a
+                href="https://shopee.vn/product/720493962/18796414880?d_id=f3c01&uls_trackid=50dn1su801lg&utm_content=3rkpSrXT7Rf53zkCuTjr51D8jD91"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[data-id]');
+    const containers = document.querySelectorAll('.container');
+
+    links.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Ẩn tất cả các containers
+        containers.forEach(container => {
+          container.classList.add('hidden');
+        });
+
+        // Hiển thị container tương ứng với data-id
+        const id = this.getAttribute('data-id');
+        const containerToShow = document.getElementById(id);
+        if (containerToShow) {
+          containerToShow.classList.remove('hidden');
+        }
+      });
+    });
+
+    // Hiển thị container đầu tiên mặc định
+    if (containers.length > 0) {
+      containers[0].classList.remove('hidden');
+    }
+  });
+</script>
+
+  </body>
+</html>
