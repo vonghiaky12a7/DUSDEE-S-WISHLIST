@@ -52,7 +52,10 @@ img {
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
-  align-items: start
+  align-items: start;
+  max-width: 1200px; /* Chỉnh chiều rộng tối đa của container */
+  margin-left: auto; /* Để căn giữa container */
+  margin-right: auto; /* Để căn giữa container */
 }
 
 .card__container {
