@@ -51,9 +51,8 @@ img {
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
-  padding-block: 5rem;
+  padding-block: 3rem;
   align-items: start;
-  max-width: 1200px; /* Chỉnh chiều rộng tối đa của container */
   margin-left: auto; /* Để căn giữa container */
   margin-right: auto; /* Để căn giữa container */
 }
@@ -207,3 +206,42 @@ img {
     padding-inline: 2.5rem;
   }
 }
+
+/* table   */
+/* styles.css */
+
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.table {
+  margin: auto;
+}
+.table-fixed {
+  width: 75%; /* Adjust as needed */
+  border-collapse: collapse;
+}
+
+.table-fixed th, .table-fixed td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.table-fixed thead {
+  background-color: #f8f8f8; /* Header background color */
+}
+
+.table-fixed tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row background color */
+}
+
+.table-fixed tbody tr:hover {
+  background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.bg-white {
+  background-color: #ffffff; /* Background color for the table */
+}
+
+

@@ -2,14 +2,13 @@
 
 nav{
 	position: relative;
-	width: 870px;
-  max-width: 900px;
+	/* width: 870px; */
 	height: 50px;
 	background: #34495e;
 	border-radius: 8px;
 	font-size: 0;
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
-  margin: 0 auto;
+  margin-left: 40px;
 }
 nav a{
 	font-size: 15px;
@@ -127,3 +126,63 @@ nav a:nth-child(10):hover~.animation {
   left: 790px;
 }
 
+nav a:nth-child(11) {
+  width: 80px;
+}
+
+nav a:nth-child(11):hover~.animation {
+  width: 80px;
+  left: 870px;
+}
+
+nav a:nth-child(12) {
+  width: 110px;
+}
+
+nav a:nth-child(12):hover~.animation {
+  width: 110px;
+  left: 950px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, 
+        #fe9e1e, 
+        #ff7300, 
+        #fffb00, 
+        #48ff00, 
+        #00ffd5, 
+        #70cbeb,
+        #7a00ff, 
+        #ff00c8, 
+        #ff0000,
+        #00ff7f,
+        #ff1493,
+        #8a2be2,
+        #ff6347,
+        #00f7aa,
+        #ffffff,
+        #2e8b57
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    background-size: 600% 600%; /* Adjusted for more colors */
+    animation: gradient-animation 15s ease infinite; /* Adjusted duration */
+}
+
+.animate-gradient {
+    animation: gradient-animation 15s ease infinite;
+}
