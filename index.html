@@ -118,75 +118,61 @@
     </style>
   </head>
   <body>
-    <div class="min-h-screen bg-background text-foreground">
-      <header class="flex justify-between items-center p-6 m-0">
+
+    <header>
+    <nav class="border-gray-200" style="margin:0px !important; background-color: #34495e;">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 py-1">
         <div class="text-3xl md:text-4xl font-bold cherry-bomb-one-regular gradient-text animate-gradient">
           DUSDEE
         </div>
-
-        <nav class="flex flex-wrap relative">
-          <a href="#" data-id="1">Skirt</a>
-          <a href="#" data-id="2">Shirt</a>
-          <a href="#" data-id="3">Jeans</a>
-          <a href="#" data-id="4">Socks</a>
-          <a href="#" data-id="5">Shoes</a>
-          <a href="#" data-id="6">Makeup</a>
-          <a href="#" data-id="7">Contour</a>
-          <a href="#" data-id="8">Accessories</a>
-          <a href="#" data-id="9">Makeup</a>
-          <a href="#" data-id="10">Curler</a>
-          <a href="#" data-id="11">Blush</a>
-          <a href="#" data-id="12">Eye Palettes</a>
-          <div class="animation start-home"></div>
-        </nav>
-        <div class="flex">
-          <!-- <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Add</button> -->
-          <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
-          <a
-            href="https://www.instagram.com/_dusdee/"
-            aria-label="Instagram"
-            target="_blank"
-          >
-            <img
-              aria-hidden="true"
-              alt="instagram-icon"
-              src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"
-              width="100px"
-              height="100px"
-            />
-          </a>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+          <div class="flex">
+            <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+              <a href="https://www.instagram.com/_dusdee/" aria-label="Instagram" target="_blank">
+                <img aria-hidden="true" alt="instagram-icon" src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png" width="64" height="64" />
+              </a>
+            </button>
+            <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+              <a href="https://www.facebook.com/vinguyen.ilen" aria-label="Facebook" target="_blank">
+                <img aria-hidden="true" alt="facebook-icon" src="https://download.logo.wine/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.png" width="64" height="64" />
+              </a>
+            </button>
+          </div>
+          <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-stone-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
           </button>
-          <button class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
-          <a
-            href="https://www.facebook.com/vinguyen.ilen"
-            aria-label="Facebook"
-            target="_blank"
-          >
-            <img
-              aria-hidden="true"
-              alt="facebook-icon"
-              src="https://download.logo.wine/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.png"
-              width="100px"
-              height="100px"
-            />
-          </a>
-          </button>
-          
         </div>
-      </header>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li><a href="#" data-id="1" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Skirt</a></li>
+            <li><a href="#" data-id="2" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Shirt</a></li>
+            <li><a href="#" data-id="3" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Jeans</a></li>
+            <li><a href="#" data-id="4" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Socks</a></li>
+            <li><a href="#" data-id="5" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Shoes</a></li>
+            <li><a href="#" data-id="6" class="block py-2 px-3 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Makeup</a></li>
+            <li><a href="#" data-id="7" class="block py-2 px-2 md:p-0 text-white rounded hover:bg-emerald-500 navbar-link">Accessories</a></li>
+            <div class="animation start-home"></div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
 
+    <div class="min-h-screen bg-background text-foreground">
       <!-- Thông số -->
-      <div
-        class="relative w-3/4 overflow-x-auto shadow-md sm:rounded-lg mx-auto"
+      <div class="relative w-3/4 overflow-x-auto shadow-md sm:rounded-lg mx-auto mt-8 border-rounded table-container"
       >
         <table
-          class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+          class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
         >
           <thead
             class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
           >
             <tr>
-              <th scope="col" class="pl-6 pr-0 py-3">Name</th>
+              <th scope="col" class="pl-6 pr-0 py-3 mobile">Name</th>
               <th scope="col" class="px-6 py-3">Height</th>
               <th scope="col" class="px-6 py-3">Weight</th>
               <th scope="col" class="px-6 py-3">V1</th>
@@ -202,29 +188,28 @@
             >
               <th
                 scope="row"
-                class="pl-6 pr-0 py-4 font-medium whitespace-nowrap dark:text-white block"
+                class="pl-6 pr-0 font-medium whitespace-nowrap block flex items-center mobile"
               >
-                <div class="flex items-center">
                   <img
                     src="https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-1/450534065_2520029044871308_47462155804979410_n.jpg?stp=dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEwiq1ZNo2ycOvUgAXSVjHgPVdxAVCHEI89V3EBUIcQj6ScXolzN_Z7ZROUY0i1N23G5PBEjIXeDBGkilk6NhI4&_nc_ohc=3pdv9NXCui4Q7kNvgHFu3ts&_nc_ht=scontent.fsgn2-8.fna&oh=00_AYBWeUTdX7Z80XCHr_QoO8CQjgqSwYOtrFBsU7BdWEJLsA&oe=66B51D97"
                     alt=""
                     class="w-9 h-9 rounded-full"
                   />
-                  <div class="pl-3">Dusdee</div>
-                </div>
+                  <div class="px-3">Dusdee</div>
               </th>
-              <td class="px-6 py-4">1m63</td>
-              <td class="px-6 py-4">53kg</td>
-              <td class="px-6 py-4">88</td>
-              <td class="px-6 py-4">66</td>
-              <td class="px-6 py-4">93</td>
-              <td class="px-6 py-4">38 or 39</td>
-              <td class="px-6 py-4">15.6 inch</td>
+              <td class="px-6 py-3 p-top-mobile">1m63</td>
+              <td class="px-6 py-3 p-top-mobile">53kg</td>
+              <td class="px-6 py-3 p-top-mobile">88</td>
+              <td class="px-6 py-3 p-top-mobile">66</td>
+              <td class="px-6 py-3 p-top-mobile">93</td>
+              <td class="px-6 py-3 p-top-mobile">38 or 39</td>
+              <td class="px-6 py-3 p-top-mobile">15.6 inch</td>
             </tr>
           </tbody>
         </table>
       </div>
 
+      <!-- card -->
       <div class="container hidden" id="1">
         <div class="card__container">
           <article class="card__article">
@@ -529,11 +514,6 @@
               </a>
             </div>
           </article>
-        </div>
-      </div>
-
-      <div class="container hidden" id="7">
-        <div class="card__container">
           <article class="card__article">
             <img
               src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lupzjqp4xuse81"
@@ -553,10 +533,85 @@
               >
             </div>
           </article>
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-tatlnnve9xjv01"
+              alt="image"
+              class="card__img"
+            />
+            <div class="card__data">
+              <span class="card__description"
+                >Mút Trang Điểm Mini Finger Puff TMR</span
+              >
+              <h2 class="card__title">TMR Official Store</h2>
+              <a
+                href="https://shopee.vn/-5-set-M%C3%BAt-Trang-%C4%90i%E1%BB%83m-Mini-Finger-Puff-TMR-M%C3%BAt-T%C3%A1n-Kem-N%E1%BB%81n-Kem-Che-Khuy%E1%BA%BFt-Cushion-i.406577721.21562674747?sp_atk=324fe622-69a0-47ab-89a6-faaebb80cbc1&xptdk=324fe622-69a0-47ab-89a6-faaebb80cbc1"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lu8zf0wfd3q73c"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Máy Uốn Tóc Xoăn Sóng Nước Hippie</span
+              >
+              <h2 class="card__title">hoanglong_official</h2>
+              <a
+                href="https://shopee.vn/product/720493962/18796414880?d_id=f3c01&uls_trackid=50dn1su801lg&utm_content=3rkpSrXT7Rf53zkCuTjr51D8jD91"
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/de78721f4f3d3466e5ef07df4d988308"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Phấn má hồng CARSLAN 6 màu thời trang cao cấp</span
+              >
+              <h2 class="card__title">Carslan Official Store. SG</h2>
+              <a
+                href="https://shopee.vn/Ph%E1%BA%A5n-m%C3%A1-h%E1%BB%93ng-CARSLAN-6-m%C3%A0u-th%E1%BB%9Di-trang-cao-c%E1%BA%A5p-t%C3%B9y-ch%E1%BB%8Dn-5.5g-i.382964977.9019314127?sp_atk=6c719986-746e-41be-a491-e2e22000d709&xptdk=6c719986-746e-41be-a491-e2e22000d709  "
+                class="card__button"
+                >Read More</a
+              >
+            </div>
+          </article>
+          <article class="card__article">
+            <img
+              src="https://down-vn.img.susercontent.com/file/48961dffa91447feac1f829445f4516c"
+              alt="image"
+              class="card__img"
+            />
+
+            <div class="card__data">
+              <span class="card__description"
+                >Bảng phấn mắt CARSLAN 10 màu đa chức năng</span
+              >
+              <h2 class="card__title">Carslan Official Store. SG</h2>
+              <a
+                href="https://shopee.vn/product/382964977/8416458126"
+                class="card__button"
+                >Read More (Màu 03 nho cả nhà :3)</a
+              >
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="container hidden" id="8">
+      <div class="container hidden" id="7">
         <div class="card__container">
           <article class="card__article">
             <img
@@ -580,102 +635,13 @@
         </div>
       </div>
 
-
-      <div class="container hidden" id="9">
-        <div class="card__container">
-          <article class="card__article">
-            <img
-              src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-tatlnnve9xjv01"
-              alt="image"
-              class="card__img"
-            />
-            <div class="card__data">
-              <span class="card__description"
-                >Mút Trang Điểm Mini Finger Puff TMR</span
-              >
-              <h2 class="card__title">TMR Official Store</h2>
-              <a
-                href="https://shopee.vn/-5-set-M%C3%BAt-Trang-%C4%90i%E1%BB%83m-Mini-Finger-Puff-TMR-M%C3%BAt-T%C3%A1n-Kem-N%E1%BB%81n-Kem-Che-Khuy%E1%BA%BFt-Cushion-i.406577721.21562674747?sp_atk=324fe622-69a0-47ab-89a6-faaebb80cbc1&xptdk=324fe622-69a0-47ab-89a6-faaebb80cbc1"
-                class="card__button"
-                >Read More</a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="container hidden" id="10">
-        <div class="card__container">
-          <article class="card__article">
-            <img
-              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lu8zf0wfd3q73c"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Máy Uốn Tóc Xoăn Sóng Nước Hippie</span
-              >
-              <h2 class="card__title">hoanglong_official</h2>
-              <a
-                href="https://shopee.vn/product/720493962/18796414880?d_id=f3c01&uls_trackid=50dn1su801lg&utm_content=3rkpSrXT7Rf53zkCuTjr51D8jD91"
-                class="card__button"
-                >Read More</a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="container hidden" id="11">
-        <div class="card__container">
-          <article class="card__article">
-            <img
-              src="https://down-vn.img.susercontent.com/file/de78721f4f3d3466e5ef07df4d988308"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Phấn má hồng CARSLAN 6 màu thời trang cao cấp</span
-              >
-              <h2 class="card__title">Carslan Official Store. SG</h2>
-              <a
-                href="https://shopee.vn/Ph%E1%BA%A5n-m%C3%A1-h%E1%BB%93ng-CARSLAN-6-m%C3%A0u-th%E1%BB%9Di-trang-cao-c%E1%BA%A5p-t%C3%B9y-ch%E1%BB%8Dn-5.5g-i.382964977.9019314127?sp_atk=6c719986-746e-41be-a491-e2e22000d709&xptdk=6c719986-746e-41be-a491-e2e22000d709  "
-                class="card__button"
-                >Read More</a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="container hidden" id="12">
-        <div class="card__container">
-          <article class="card__article">
-            <img
-              src="https://down-vn.img.susercontent.com/file/48961dffa91447feac1f829445f4516c"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Bảng phấn mắt CARSLAN 10 màu đa chức năng</span
-              >
-              <h2 class="card__title">Carslan Official Store. SG</h2>
-              <a
-                href="https://shopee.vn/product/382964977/8416458126"
-                class="card__button"
-                >Read More (Màu 03 nho cả nhà :3)</a
-              >
-            </div>
-          </article>
-        </div>
+      <div class="flex justify-center mx-auto text-wrap my-1 items-center">
+        <p class="text-4xl font-mono antialiased font-black text-cyan-700 mt-4">Happy birthday to my baby Dusdee </p>
+        <img class="mx-5" src="https://cdn-icons-png.flaticon.com/512/6794/6794503.png" alt="" width="100" height="100">
       </div>
     </div>
+
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll("a[data-id]");
@@ -705,5 +671,25 @@
         }
       });
     </script>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbarButton = document.querySelector('[data-collapse-toggle="navbar-language"]');
+    const navbarMenu = document.getElementById('navbar-language');
+
+    navbarButton.addEventListener('click', function () {
+      navbarMenu.classList.toggle('hidden');
+    });
+
+    const navbarLinks = document.querySelectorAll('.navbar-link');
+    navbarLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        if (!navbarMenu.classList.contains('hidden')) {
+          navbarMenu.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
   </body>
 </html>

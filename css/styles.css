@@ -39,7 +39,9 @@ body {
   background-image: linear-gradient(160deg, #67cece 0%, #78e0de 50%, #cae4df 100%);
   color: var(--text-color);
 }
-
+:root::-webkit-scrollbar{
+  display: none;
+}
 img {
   display: block;
   max-width: 100%;
@@ -169,6 +171,48 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 440px) {
+  .flex {
+    align-items: center;
+  }
+  .border-rounded {
+    border-radius: 1.5rem; /* 4px */
+    width: 83% !important;
+  }
+  .p-top-mobile {
+    padding-top: 1rem !important; /* 12px */
+    padding-bottom: 0rem !important; /* 12px */
+    vertical-align: top;
+  }
+  .mobile {
+    /* px */
+    padding-left: 1rem !important; /* 24px */
+    padding-right: 1.5rem !important; /* 24px */
+    /* py */
+    padding-top: 0.5rem; /* 12px */
+    padding-bottom: 1rem; /* 12px */
+  }
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+    .table-container {
+    width: 100%;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    overflow-y: hidden; /* Ẩn thanh cuộn dọc nếu không cần */
+  }
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên các trình duyệt WebKit (Chrome, Safari) */
+  }
+
+  /* Đối với các trình duyệt khác không hỗ trợ ::-webkit-scrollbar */
+  .table-container {
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên Internet Explorer và Edge */
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+  }
+}
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
